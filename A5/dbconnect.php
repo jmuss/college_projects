@@ -1,4 +1,5 @@
 <?php
+include 'config.php';
 /**
  * this class does three things, connects to the database, inserts info into the 
  * database, or outputs the info from the database to the screen
@@ -18,7 +19,7 @@ class Dbconnect {
     
     public function connect(){
     //1. connect to database
-    $connect = mysql_connect('2011.ispace.ci.fsu.edu', 'jjm07c', 'djzfmnr2');
+    $connect = mysql_connect('2011.ispace.ci.fsu.edu', "$dbuser", "$dbpass");
     $this->connect = $connect;
     
     //2. select database from server
