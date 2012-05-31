@@ -1,0 +1,31 @@
+<div id="container">
+        
+        <table><tbody>  
+                                
+        <?php 
+        
+        foreach ($data as $row)
+
+            {
+                
+                echo "<tr>";
+                
+                echo "<td>$row->prd_picture</td>";
+
+                echo "<td><ul>";
+                
+                echo "<li> $row->prd_name </li>";
+
+                echo "<li> $ $row->prd_price </li>";
+                
+                echo "</ul></td>";
+
+                echo "</tr>";
+
+            }
+
+        ?>
+        </tbody></table>
+        
+    </div>
+        
